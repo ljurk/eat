@@ -4,26 +4,29 @@ A recipe collection built for GitHub Pages. Recipes are stored as YAML and rende
 
 ## Add a recipe
 
-Add another item to `_data/recipes.yml` using this structure:
+Create a YAML file in `_data/recipes/`, for example
+`_data/recipes/04-recipe-name.yml`, using this structure:
 
 ```yaml
-- title: Recipe name
-  description: A short description.
-  category: Dinner
-  time: 30 min
-  servings: 4
-  ingredients:
-    - First ingredient
-    - Second ingredient
-  steps:
-    - First instruction.
-    - Second instruction.
-  source:
-    label: Original recipe
-    url: https://example.com/recipe
+title: Recipe name
+description: A short description.
+category: Dinner
+time: 30 min
+servings: 4
+ingredients:
+  - First ingredient
+  - Second ingredient
+steps:
+  - First instruction.
+  - Second instruction.
+source:
+  label: Original recipe
+  url: https://example.com/recipe
 ```
 
-Commit and push the file; GitHub Pages rebuilds the page automatically.
+Use a numbered filename to control the display order. If you introduce a new
+category, add it to `_data/categories.yml`. Commit and push the file; GitHub
+Pages rebuilds the page automatically.
 
 ## Publish on GitHub Pages
 

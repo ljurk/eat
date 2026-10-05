@@ -32,15 +32,15 @@ title: Recipes
     </label>
     <div class="filters" role="group" aria-label="Filter by category">
       <button class="filter active" type="button" data-filter="all">All</button>
-      {% assign categories = site.data.recipes | map: "category" | uniq %}
-      {% for category in categories %}
+      {% for category in site.data.categories %}
         <button class="filter" type="button" data-filter="{{ category | downcase }}">{{ category }}</button>
       {% endfor %}
     </div>
   </div>
 
   <div class="recipe-grid" id="recipe-grid">
-    {% for recipe in site.data.recipes %}
+    {% for recipe_entry in site.data.recipes %}
+      {% assign recipe = recipe_entry[1] %}
       <article class="recipe-card{% if recipe.featured %} featured{% endif %}"
         data-category="{{ recipe.category | downcase }}"
         data-search="{{ recipe.title | downcase }} {{ recipe.description | downcase }} {{ recipe.ingredients | join: ' ' | downcase }}">
