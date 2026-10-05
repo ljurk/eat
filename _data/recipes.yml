@@ -1,0 +1,71 @@
+- title: Creamy lemon pasta
+  description: Silky, bright, and ready in the time it takes to boil the pasta.
+  category: Dinner
+  time: 25 min
+  servings: 2
+  featured: true
+  ingredients:
+    - 200 g spaghetti
+    - 1 unwaxed lemon
+    - 40 g Parmesan, finely grated
+    - 2 tbsp unsalted butter
+    - 1 small garlic clove, finely grated
+    - 1 handful fresh basil
+    - Salt and freshly cracked black pepper
+  steps:
+    - Bring a large pot of well-salted water to a boil. Cook the spaghetti until just shy of al dente.
+    - Meanwhile, zest the lemon into a large heatproof bowl. Add the Parmesan, butter, garlic, and a generous grind of pepper.
+    - Reserve 250 ml of pasta water, then drain the spaghetti. Add it to the bowl with 100 ml of pasta water.
+    - Toss vigorously until the butter and cheese melt into a glossy sauce. Add more pasta water as needed.
+    - Finish with lemon juice to taste, torn basil, and extra Parmesan.
+  source:
+    label: Inspired by Bon Appétit
+    url: https://www.bonappetit.com/recipe/pasta-al-limone
+
+- title: Crispy chickpea bowls
+  description: Roasted chickpeas, crunchy vegetables, and a punchy tahini dressing.
+  category: Lunch
+  time: 35 min
+  servings: 4
+  ingredients:
+    - 2 × 400 g cans chickpeas, drained and dried
+    - 1 tsp ground cumin
+    - 1 tsp smoked paprika
+    - 2 tbsp olive oil
+    - 250 g cooked brown rice
+    - 1 cucumber, sliced
+    - 200 g cherry tomatoes, halved
+    - 3 tbsp tahini
+    - 1 lemon, juiced
+    - Salt and freshly cracked black pepper
+  steps:
+    - Heat the oven to 220°C. Toss the chickpeas with cumin, paprika, olive oil, and salt.
+    - Roast on a large tray for 20–25 minutes, shaking halfway, until crisp and golden.
+    - Whisk the tahini with the lemon juice, 3 tablespoons of cold water, and a pinch of salt.
+    - Divide the rice, cucumber, and tomatoes between bowls. Add the hot chickpeas and spoon over the dressing.
+  source:
+    label: Inspired by BBC Good Food
+    url: https://www.bbcgoodfood.com/recipes/collection/chickpea-recipes
+
+- title: Overnight cinnamon oats
+  description: A softly spiced breakfast you can make before bed.
+  category: Breakfast
+  time: 10 min + chilling
+  servings: 2
+  ingredients:
+    - 100 g rolled oats
+    - 1 tbsp chia seeds
+    - 1 tsp ground cinnamon
+    - 250 ml milk or oat milk
+    - 100 g Greek-style yogurt
+    - 1 tbsp maple syrup
+    - 1 apple, thinly sliced
+    - 2 tbsp toasted almonds
+  steps:
+    - Stir the oats, chia seeds, and cinnamon together in a lidded container.
+    - Add the milk, yogurt, and maple syrup. Mix well, cover, and refrigerate overnight.
+    - Loosen with a splash of milk in the morning, then divide between two bowls.
+    - Top with sliced apple, toasted almonds, and an extra pinch of cinnamon.
+  source:
+    label: Inspired by Cookie and Kate
+    url: https://cookieandkate.com/overnight-oats-recipe/

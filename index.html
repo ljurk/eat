@@ -1,0 +1,87 @@
+---
+layout: default
+title: Recipes
+---
+
+<header class="site-header">
+  <nav class="nav wrap" aria-label="Main navigation">
+    <a class="brand" href="./" aria-label="Mise home">
+      <span>Mise</span>
+    </a>
+    <a class="nav-link" href="#recipes">Recipes</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <section class="intro-block">
+    <h1>Mise recipes</h1>
+    <p>Reliable recipes for ordinary days—collected, cooked, and worth making again.</p>
+  </section>
+
+  <section id="recipes" class="recipes-section">
+  <div class="section-heading">
+    <h2>Recipes</h2>
+    <p class="recipe-count"><span id="visible-count">{{ site.data.recipes | size }}</span> recipes</p>
+  </div>
+
+  <div class="toolbar">
+    <label class="search">
+      <span class="sr-only">Search recipes</span>
+      <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m16 16 5 5"></path></svg>
+      <input id="recipe-search" type="search" placeholder="Search by recipe or ingredient…" autocomplete="off">
+    </label>
+    <div class="filters" role="group" aria-label="Filter by category">
+      <button class="filter active" type="button" data-filter="all">All</button>
+      {% assign categories = site.data.recipes | map: "category" | uniq %}
+      {% for category in categories %}
+        <button class="filter" type="button" data-filter="{{ category | downcase }}">{{ category }}</button>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="recipe-grid" id="recipe-grid">
+    {% for recipe in site.data.recipes %}
+      <article class="recipe-card{% if recipe.featured %} featured{% endif %}"
+        data-category="{{ recipe.category | downcase }}"
+        data-search="{{ recipe.title | downcase }} {{ recipe.description | downcase }} {{ recipe.ingredients | join: ' ' | downcase }}">
+        <button class="card-summary" type="button" aria-expanded="false" aria-controls="recipe-{{ forloop.index }}">
+          <span class="card-number">0{{ forloop.index }}</span>
+          <span class="card-body">
+            <span class="card-meta">{{ recipe.category }} <i></i> {{ recipe.time }}</span>
+            <span class="card-title">{{ recipe.title }}</span>
+            <span class="card-description">{{ recipe.description }}</span>
+          </span>
+          <span class="open-icon" aria-hidden="true"></span>
+        </button>
+
+        <div class="recipe-details" id="recipe-{{ forloop.index }}" hidden>
+          <div class="ingredients">
+            <h3>Ingredients</h3>
+            <p class="servings">Serves {{ recipe.servings }}</p>
+            <ul>
+              {% for ingredient in recipe.ingredients %}<li>{{ ingredient }}</li>{% endfor %}
+            </ul>
+          </div>
+          <div class="method">
+            <h3>Method</h3>
+            <ol>
+              {% for step in recipe.steps %}
+                <li><span>{{ step }}</span></li>
+              {% endfor %}
+            </ol>
+            <a class="source-link" href="{{ recipe.source.url }}" target="_blank" rel="noopener noreferrer">
+              {{ recipe.source.label }} <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+
+  <p class="empty-state" id="empty-state" hidden>No recipes found. Try another search.</p>
+  </section>
+</main>
+
+<footer class="footer wrap">
+  <p>Made for good meals and fewer open tabs.</p>
+</footer>

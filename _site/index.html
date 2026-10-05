@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A small, personal recipe collection.">
+    <meta name="theme-color" content="#f6f8fa">
+    <title>Recipes · Mise</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+  <nav class="nav wrap" aria-label="Main navigation">
+    <a class="brand" href="./" aria-label="Mise home">
+      <span>Mise</span>
+    </a>
+    <a class="nav-link" href="#recipes">Recipes</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <section class="intro-block">
+    <h1>Mise recipes</h1>
+    <p>Reliable recipes for ordinary days—collected, cooked, and worth making again.</p>
+  </section>
+
+  <section id="recipes" class="recipes-section">
+  <div class="section-heading">
+    <h2>Recipes</h2>
+    <p class="recipe-count"><span id="visible-count">3</span> recipes</p>
+  </div>
+
+  <div class="toolbar">
+    <label class="search">
+      <span class="sr-only">Search recipes</span>
+      <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m16 16 5 5"></path></svg>
+      <input id="recipe-search" type="search" placeholder="Search by recipe or ingredient…" autocomplete="off">
+    </label>
+    <div class="filters" role="group" aria-label="Filter by category">
+      <button class="filter active" type="button" data-filter="all">All</button>
+      
+      
+        <button class="filter" type="button" data-filter="dinner">Dinner</button>
+      
+        <button class="filter" type="button" data-filter="lunch">Lunch</button>
+      
+        <button class="filter" type="button" data-filter="breakfast">Breakfast</button>
+      
+    </div>
+  </div>
+
+  <div class="recipe-grid" id="recipe-grid">
+    
+      <article class="recipe-card featured"
+        data-category="dinner"
+        data-search="creamy lemon pasta silky, bright, and ready in the time it takes to boil the pasta. 200 g spaghetti 1 unwaxed lemon 40 g parmesan, finely grated 2 tbsp unsalted butter 1 small garlic clove, finely grated 1 handful fresh basil salt and freshly cracked black pepper">
+        <button class="card-summary" type="button" aria-expanded="false" aria-controls="recipe-1">
+          <span class="card-number">01</span>
+          <span class="card-body">
+            <span class="card-meta">Dinner <i></i> 25 min</span>
+            <span class="card-title">Creamy lemon pasta</span>
+            <span class="card-description">Silky, bright, and ready in the time it takes to boil the pasta.</span>
+          </span>
+          <span class="open-icon" aria-hidden="true"></span>
+        </button>
+
+        <div class="recipe-details" id="recipe-1" hidden>
+          <div class="ingredients">
+            <h3>Ingredients</h3>
+            <p class="servings">Serves 2</p>
+            <ul>
+              <li>200 g spaghetti</li><li>1 unwaxed lemon</li><li>40 g Parmesan, finely grated</li><li>2 tbsp unsalted butter</li><li>1 small garlic clove, finely grated</li><li>1 handful fresh basil</li><li>Salt and freshly cracked black pepper</li>
+            </ul>
+          </div>
+          <div class="method">
+            <h3>Method</h3>
+            <ol>
+              
+                <li><span>Bring a large pot of well-salted water to a boil. Cook the spaghetti until just shy of al dente.</span></li>
+              
+                <li><span>Meanwhile, zest the lemon into a large heatproof bowl. Add the Parmesan, butter, garlic, and a generous grind of pepper.</span></li>
+              
+                <li><span>Reserve 250 ml of pasta water, then drain the spaghetti. Add it to the bowl with 100 ml of pasta water.</span></li>
+              
+                <li><span>Toss vigorously until the butter and cheese melt into a glossy sauce. Add more pasta water as needed.</span></li>
+              
+                <li><span>Finish with lemon juice to taste, torn basil, and extra Parmesan.</span></li>
+              
+            </ol>
+            <a class="source-link" href="https://www.bonappetit.com/recipe/pasta-al-limone" target="_blank" rel="noopener noreferrer">
+              Inspired by Bon Appétit <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </article>
+    
+      <article class="recipe-card"
+        data-category="lunch"
+        data-search="crispy chickpea bowls roasted chickpeas, crunchy vegetables, and a punchy tahini dressing. 2 × 400 g cans chickpeas, drained and dried 1 tsp ground cumin 1 tsp smoked paprika 2 tbsp olive oil 250 g cooked brown rice 1 cucumber, sliced 200 g cherry tomatoes, halved 3 tbsp tahini 1 lemon, juiced salt and freshly cracked black pepper">
+        <button class="card-summary" type="button" aria-expanded="false" aria-controls="recipe-2">
+          <span class="card-number">02</span>
+          <span class="card-body">
+            <span class="card-meta">Lunch <i></i> 35 min</span>
+            <span class="card-title">Crispy chickpea bowls</span>
+            <span class="card-description">Roasted chickpeas, crunchy vegetables, and a punchy tahini dressing.</span>
+          </span>
+          <span class="open-icon" aria-hidden="true"></span>
+        </button>
+
+        <div class="recipe-details" id="recipe-2" hidden>
+          <div class="ingredients">
+            <h3>Ingredients</h3>
+            <p class="servings">Serves 4</p>
+            <ul>
+              <li>2 × 400 g cans chickpeas, drained and dried</li><li>1 tsp ground cumin</li><li>1 tsp smoked paprika</li><li>2 tbsp olive oil</li><li>250 g cooked brown rice</li><li>1 cucumber, sliced</li><li>200 g cherry tomatoes, halved</li><li>3 tbsp tahini</li><li>1 lemon, juiced</li><li>Salt and freshly cracked black pepper</li>
+            </ul>
+          </div>
+          <div class="method">
+            <h3>Method</h3>
+            <ol>
+              
+                <li><span>Heat the oven to 220°C. Toss the chickpeas with cumin, paprika, olive oil, and salt.</span></li>
+              
+                <li><span>Roast on a large tray for 20–25 minutes, shaking halfway, until crisp and golden.</span></li>
+              
+                <li><span>Whisk the tahini with the lemon juice, 3 tablespoons of cold water, and a pinch of salt.</span></li>
+              
+                <li><span>Divide the rice, cucumber, and tomatoes between bowls. Add the hot chickpeas and spoon over the dressing.</span></li>
+              
+            </ol>
+            <a class="source-link" href="https://www.bbcgoodfood.com/recipes/collection/chickpea-recipes" target="_blank" rel="noopener noreferrer">
+              Inspired by BBC Good Food <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </article>
+    
+      <article class="recipe-card"
+        data-category="breakfast"
+        data-search="overnight cinnamon oats a softly spiced breakfast you can make before bed. 100 g rolled oats 1 tbsp chia seeds 1 tsp ground cinnamon 250 ml milk or oat milk 100 g greek-style yogurt 1 tbsp maple syrup 1 apple, thinly sliced 2 tbsp toasted almonds">
+        <button class="card-summary" type="button" aria-expanded="false" aria-controls="recipe-3">
+          <span class="card-number">03</span>
+          <span class="card-body">
+            <span class="card-meta">Breakfast <i></i> 10 min + chilling</span>
+            <span class="card-title">Overnight cinnamon oats</span>
+            <span class="card-description">A softly spiced breakfast you can make before bed.</span>
+          </span>
+          <span class="open-icon" aria-hidden="true"></span>
+        </button>
+
+        <div class="recipe-details" id="recipe-3" hidden>
+          <div class="ingredients">
+            <h3>Ingredients</h3>
+            <p class="servings">Serves 2</p>
+            <ul>
+              <li>100 g rolled oats</li><li>1 tbsp chia seeds</li><li>1 tsp ground cinnamon</li><li>250 ml milk or oat milk</li><li>100 g Greek-style yogurt</li><li>1 tbsp maple syrup</li><li>1 apple, thinly sliced</li><li>2 tbsp toasted almonds</li>
+            </ul>
+          </div>
+          <div class="method">
+            <h3>Method</h3>
+            <ol>
+              
+                <li><span>Stir the oats, chia seeds, and cinnamon together in a lidded container.</span></li>
+              
+                <li><span>Add the milk, yogurt, and maple syrup. Mix well, cover, and refrigerate overnight.</span></li>
+              
+                <li><span>Loosen with a splash of milk in the morning, then divide between two bowls.</span></li>
+              
+                <li><span>Top with sliced apple, toasted almonds, and an extra pinch of cinnamon.</span></li>
+              
+            </ol>
+            <a class="source-link" href="https://cookieandkate.com/overnight-oats-recipe/" target="_blank" rel="noopener noreferrer">
+              Inspired by Cookie and Kate <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </article>
+    
+  </div>
+
+  <p class="empty-state" id="empty-state" hidden>No recipes found. Try another search.</p>
+  </section>
+</main>
+
+<footer class="footer wrap">
+  <p>Made for good meals and fewer open tabs.</p>
+</footer>
+
+  </body>
+</html>
