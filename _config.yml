@@ -2,6 +2,7 @@ title: Mise
 description: A small, personal recipe collection.
 url: "https://ljurk.github.io"
 baseurl: "/eat"
+# theme: minima
 
 exclude:
   - README.md
