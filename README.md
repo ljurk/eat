@@ -1,27 +1,27 @@
-# Mise recipes
+# Recipes
 
-A recipe collection built for GitHub Pages. Recipes are stored as separate YAML files and rendered as Markdown by Jekyll using the built-in `minima` theme.
+A recipe collection built for GitHub Pages. Recipes are stored as separate YAML files and rendered as Markdown by Jekyll.
 
 ## Add a recipe
 
 Create a YAML file in `_data/recipes/`, for example
-`_data/recipes/04-recipe-name.yml`, using this structure:
+`_data/recipes/05-rezeptname.yml`:
 
 ```yaml
-title: Recipe name
-description: A short description.
-category: Dinner
-time: 30 min
+title: Rezeptname
+description: Eine kurze Beschreibung.
+category: Abendessen
+time: 30 Min.
 servings: 4
 ingredients:
-  - First ingredient
-  - Second ingredient
+  - Erste Zutat
+  - Zweite Zutat
 steps:
-  - First instruction.
-  - Second instruction.
+  - Erster Zubereitungsschritt.
+  - Zweiter Zubereitungsschritt.
 source:
-  label: Original recipe
-  url: https://example.com/recipe
+  label: Originalrezept
+  url: https://example.com/rezept
 ```
 
 Use numbered YAML filenames to control the order on the main page. Each recipe
@@ -39,9 +39,9 @@ Your site will be available at `https://<username>.github.io/<repository>/`.
 
 ## Preview locally
 
-Install Jekyll and the `minima` theme, then start the local server:
+Install Jekyll, then start the local server:
 
 ```sh
-gem install jekyll minima
+gem install jekyll
 jekyll serve
 ```

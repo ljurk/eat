@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Recipes
+title: Rezepte
 ---
 
-# Mise recipes
+# Rezepte
 
-Reliable recipes for ordinary days—collected, cooked, and worth making again.
+Bewährte Rezepte für jeden Tag – gesammelt, gekocht und zum Wiederholen empfohlen.
 
 {% for recipe_entry in site.data.recipes %}
 {% assign recipe = recipe_entry[1] %}
@@ -14,18 +14,20 @@ Reliable recipes for ordinary days—collected, cooked, and worth making again.
 
 {{ recipe.description }}
 
-**Category:** {{ recipe.category }}  
-**Servings:** {{ recipe.servings }}
+**Kategorie:** {{ recipe.category }}
+**Portionen:** {{ recipe.servings }}
 
-### Ingredients
+### Zutaten
 
 {% for ingredient in recipe.ingredients -%}
+
 - {{ ingredient }}
 {% endfor %}
 
-### Steps
+### Zubereitung
 
 {% for step in recipe.steps -%}
+
 1. {{ step }}
 {% endfor %}
 

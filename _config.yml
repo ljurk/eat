@@ -1,5 +1,6 @@
-title: Mise
-description: A small, personal recipe collection.
+title: Chefkoch lukn
+description: Eine kleine, persönliche Rezeptsammlung.
+lang: de
 url: "https://ljurk.github.io"
 baseurl: "/eat"
 # theme: minima
