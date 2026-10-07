@@ -9,7 +9,6 @@ Create a YAML file in `_data/recipes/`, for example
 
 ```yaml
 title: Recipe name
-url: /recipes/recipe-name/
 description: A short description.
 category: Dinner
 time: 30 min
@@ -25,23 +24,9 @@ source:
   url: https://example.com/recipe
 ```
 
-Then create its Markdown page at `recipes/recipe-name.md`:
-
-```markdown
----
-layout: default
-title: Recipe name
-permalink: /recipes/recipe-name/
-recipe_id: 04-recipe-name
----
-
-{% raw %}{% assign recipe = site.data.recipes[page.recipe_id] %}
-{% include recipe.md recipe=recipe %}{% endraw %}
-```
-
-The `recipe_id` must match the YAML filename without `.yml`. Use numbered YAML
-filenames to control the order on the main page. Commit and push both files;
-GitHub Pages rebuilds the site automatically.
+Use numbered YAML filenames to control the order on the main page. Each recipe
+is rendered automatically as a collapsible section, so no separate Markdown
+page is needed. Commit and push the YAML file; GitHub Pages rebuilds the site.
 
 ## Publish on GitHub Pages
 
